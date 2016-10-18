@@ -30,8 +30,16 @@ iex> IO.inspect result
 
   ```elixir
   def deps do
-    [{:aws, "~> 0.1.0"}]
+    [{:aws, "~> 0.2.0"}]
   end
+  ```
+  
+* Configure the OTP application to start `aws-elixir`
+
+  ```elixir
+  def application do
+    [applications: [:logger, :aws]]
+  end  
   ```
 
 * Run `mix deps.get` to install.

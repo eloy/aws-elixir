@@ -35,13 +35,13 @@ defmodule AWS.Mixfile do
     [{:dialyxir, "~> 0.3", only: [:dev]},
      {:earmark, "~> 0.2.0", only: [:dev]},
      {:ex_doc, "~> 0.11.3", only: [:dev]},
-     {:httpoison, "~> 0.9"},
+     {:httpoison, "~> 0.9.1"},
      {:poison, "~> 1.5 or ~> 2.0"},
      {:timex, "~> 3.0"}]
   end
 
   defp version do
-    "0.1.0"
+    "0.2.0"
   end
 
   defp package do
